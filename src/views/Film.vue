@@ -10,9 +10,9 @@
           <div class="film-detail-modal__info py-24 flex flex-col items-center justify-center z-10">
             <span class="heading text-yellow-500">STAR WARS</span>
             <h2 class="film-detail-modal__title text-white heading uppercase text-center leading-none my-4">{{this.current.title}}</h2>
-            <div class="film-detail-modal__opening my-12 text-xl md:w-1/2 sm:w-full text-yellow-500">
+            <p class="film-detail-modal__opening my-12 text-xl md:w-1/2 w-full md:p-0 px-4 text-yellow-500">
               {{this.current.opening_crawl}}
-            </div>
+            </p>
           </div>
           <img :src="imgAPI + details.backdrop_path" alt="" v-if="details" class="object-cover absolute top-0 left-0 w-full h-full">
         </header>
@@ -155,10 +155,18 @@ export default {
 
   &__title {
     font-size: 4em;
+
+    @media (max-width: 640px) {
+      font-size: 2em;
+    }
   }
 
   &__opening {
     transform: perspective(10em) rotateX(10deg);
+
+    @media (max-width: 640px) {
+      transform: none;
+    }
   }
 }
 </style>
