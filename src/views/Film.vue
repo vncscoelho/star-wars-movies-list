@@ -76,7 +76,7 @@ export default {
   props: {
     episodeId: {
       type: [String, Number],
-      default: null
+      required: true
     },
     movie: {
       type: Object,
