@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home matches the snapshot 1`] = `
+<div
+  class="home"
+>
+  <section
+    class="films"
+  >
+    <ul
+      class="films__timeline flex flex-col w-full m-auto"
+    >
+      <li
+        class="film heading w-1/2 my-32"
+      >
+        <h2
+          class="film__title"
+        >
+          
+                    A NEW HOPE
+                
+        </h2>
+         
+        <span
+          class="film__release text-xl text-white"
+        >
+          1977
+        </span>
+         
+        <span
+          class="film__episode serif"
+        >
+          IV
+        </span>
+      </li>
+    </ul>
+     
+    <div
+      class="films__line"
+    />
+  </section>
+</div>
+`;

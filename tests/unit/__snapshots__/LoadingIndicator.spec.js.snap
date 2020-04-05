@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loading Indicator matches the snapshot 1`] = `
+<div
+  class="loading-indicator"
+>
+  <div
+    class="loading-indicator__spinner"
+  >
+    <svg
+      viewBox="0 0 500 500"
+      width="280"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <title>
+        LOADING
+      </title>
+       
+      <path
+        d="M243.2, 382.4c-74.8,
+        0-135.5-60.7-135.5-135.5s60.7-135.5,135.5-135.5s135.5, 60.7, 135.5,
+        135.5 S318, 382.4, 243.2, 382.4z"
+        fill="transparent"
+        id="textcircle"
+      />
+       
+      <text
+        class="heading"
+      >
+        <textpath
+          xlink:href="#textcircle"
+        >
+          
+                  ● LOADING ● LOADING ● LOADING
+            
+        </textpath>
+      </text>
+    </svg>
+  </div>
+</div>
+`;
