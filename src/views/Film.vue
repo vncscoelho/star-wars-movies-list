@@ -112,7 +112,6 @@ export default {
         await this.$swapi
           .get(`films/${this.episodeId}`)
           .then(({ data }) => {
-            console.log(data)
             this.current = data
           })
       }
