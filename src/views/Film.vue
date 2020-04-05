@@ -2,6 +2,7 @@
   <loading-indicator v-if="!isLoaded" key="0"  />
   <section v-else key="1" class="film-detail-modal w-full md:p-12 sm:p-0">
       <div class="film-detail-modal__wrapper md:rounded-md sm:rounded-none bg-white w-full h-full relative overflow-hidden">
+        <!-- Back button -->
         <router-link to="/" class="heading absolute top-0 left-0 z-20 px-4 py-4 font-bold rounded-br bg-yellow-500 text-yellow-800 hover:bg-yellow-400">
           BACK
         </router-link>
@@ -60,7 +61,9 @@
         <!-- Link to sequel -->
         <section class="film-detail-modal__meta p-8 bg-yellow-500 w-full text-white text-center" v-if="sequel">
             <h3 class="heading center">FOLLLOWED BY</h3>
-            <router-link :to="`/film/${sequel.episode_id}`" class="text-3xl heading text-black underline">{{sequel.title}}</router-link>
+            <router-link :to="`/film/${sequel.episode_id}`" class="text-3xl heading text-black underline">
+              {{sequel.title}}
+            </router-link>
         </section>
       </div>
   </section>
@@ -108,6 +111,7 @@ export default {
       this.current = this.movie
 
       /* If the movie isn't available by props */
+      /* TODO - Could be improved by using Vuex */
       if (!this.current) {
         await this.$swapi
           .get(`films/${this.episodeId}`)
