@@ -15,6 +15,11 @@ const routes = [
     component: () => import("../views/Film"),
     path: "/film/:episodeId",
     props: true
+  },
+  {
+    path: "*",
+    name: "404",
+    component: () => import("../views/404")
   }
 ]
 
