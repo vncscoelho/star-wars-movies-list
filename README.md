@@ -1,4 +1,4 @@
-# delivery-much-tech-challenge
+# Star Wars Movie List
 
 ## Project setup
 1. ````npm install ````
