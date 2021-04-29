@@ -5,7 +5,7 @@ export default {
     apis.forEach(api => {
       const { name, apiKey } = api
       const axiosInstance = axios.create({
-        baseURL: process.env[`VUE_APP_${name.toUpperCase()}_API`]
+        baseURL: `https://${process.env[`VUE_APP_${name.toUpperCase()}_API`]}`
       })
 
       if (apiKey) {
